@@ -13,11 +13,10 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
-public abstract  class BaseRepositoryImpl <T extends BaseEntity<ID>, ID extends Serializable>
+public abstract class BaseRepositoryImpl<T extends BaseEntity<ID>, ID extends Serializable>
         implements BaseRepository<T, ID> {
     protected final EntityManager em;
     private CustomEntityTransaction entityTransaction;
-
 
 
     public BaseRepositoryImpl(EntityManager em) {
@@ -133,12 +132,14 @@ public abstract  class BaseRepositoryImpl <T extends BaseEntity<ID>, ID extends 
             transaction.rollback();
         }
     }
+
     @Override
     public void customCommitTransaction() {
         if (this.entityTransaction != null && this.entityTransaction.isCommit()) {
             this.entityTransaction.getEntityTransaction().commit();
         }
     }
+
     @Override
     public void beginTransaction(boolean commit) {
         EntityTransaction transaction = em.getTransaction();
@@ -165,8 +166,5 @@ public abstract  class BaseRepositoryImpl <T extends BaseEntity<ID>, ID extends 
     }
 
     public abstract Class<T> getEntityClass();
-
-    public void setEntityTransaction(CustomEntityTransaction entityTransaction) {
-        this.entityTransaction = entityTransaction;
-    }
 }
+
