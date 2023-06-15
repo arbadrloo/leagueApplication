@@ -17,7 +17,7 @@ import java.util.Set;
 
 public class Team extends BaseEntity<Integer> {
 
-    public static final String TABLE_NAME = "Teams";
+    public static final String TABLE_NAME = "teams";
 
     public static final String TEAM_ID = "TEAM_ID";
     public static final String NAME = "NAME";

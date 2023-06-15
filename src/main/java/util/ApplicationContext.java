@@ -112,5 +112,4 @@ public class ApplicationContext {
         return cityService;
     }
 
-
 }
