@@ -33,6 +33,13 @@ public class Match extends BaseEntity<Long> {
     @JoinColumn(name = "team2_id")
     Team team2;
 
-    @OneToMany(mappedBy = "match")
-    private List<MatchLineup> lineups;
+    @OneToOne(mappedBy = "match")
+    MatchLineup MatchLineupTeam1;
+
+    @OneToOne(mappedBy = "match")
+    MatchLineup MatchLineupTeam2;
+
+    @ManyToOne
+    @JoinColumn(name = "stadium_id")
+    Stadium stadium;
 }

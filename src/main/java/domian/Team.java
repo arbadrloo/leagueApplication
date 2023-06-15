@@ -5,6 +5,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = Team.TABLE_NAME)
@@ -36,5 +37,11 @@ public class Team extends BaseEntity<Integer> {
 
     @Column(name = TOTAL_SCORE)
     int totalScore;
+
+    @OneToMany(mappedBy = "team1")
+    private Set<Match> homeMatches;
+
+    @OneToMany(mappedBy = "team2")
+    private Set<Match> awayMatches;
 
 }
