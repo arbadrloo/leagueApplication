@@ -27,8 +27,8 @@ public abstract class BaseRepositoryImpl<T extends BaseEntity<ID>, ID extends Se
     public T save(T t) {
         beginTransaction(true);
         t = saveWithoutTransaction(t);
-        customCommitTransaction();
-
+//        customCommitTransaction();
+        commitTransaction();
         return t;
     }
 
@@ -113,9 +113,18 @@ public abstract class BaseRepositoryImpl<T extends BaseEntity<ID>, ID extends Se
         if (!transaction.isActive()) {
             transaction.begin();
         }
+    }
+    @Override
+    public void beginTransaction(boolean commit) {
+        EntityTransaction transaction = em.getTransaction();
+        if (!transaction.isActive()) {
+            this.entityTransaction = new CustomEntityTransaction(
+                    transaction, commit
+            );
+            transaction.begin();
+        }
 
     }
-
 
     @Override
     public void commitTransaction() {
@@ -136,21 +145,12 @@ public abstract class BaseRepositoryImpl<T extends BaseEntity<ID>, ID extends Se
     @Override
     public void customCommitTransaction() {
         if (this.entityTransaction != null && this.entityTransaction.isCommit()) {
+//        if (this.entityTransaction != null && !this.entityTransaction.isCommit()) {
             this.entityTransaction.getEntityTransaction().commit();
         }
     }
 
-    @Override
-    public void beginTransaction(boolean commit) {
-        EntityTransaction transaction = em.getTransaction();
-        if (!transaction.isActive()) {
-            this.entityTransaction = new CustomEntityTransaction(
-                    transaction, commit
-            );
-            transaction.begin();
-        }
 
-    }
 
     @Override
     public void customRollbackTransaction() {
@@ -166,5 +166,7 @@ public abstract class BaseRepositoryImpl<T extends BaseEntity<ID>, ID extends Se
     }
 
     public abstract Class<T> getEntityClass();
+
+
 }
 

@@ -12,7 +12,7 @@ import java.util.Optional;
 public class BaseServiceImpl <T extends BaseEntity<ID>, ID extends Serializable, R extends BaseRepository<T, ID>>
         implements BaseService<T, ID> {
 
-    protected final R repository;
+    public final R repository;
 
     public BaseServiceImpl(R repository) {
         this.repository = repository;
@@ -23,18 +23,19 @@ public class BaseServiceImpl <T extends BaseEntity<ID>, ID extends Serializable,
         try {
             repository.beginTransaction(true);
             t = repository.save(t);
-            repository.customCommitTransaction();
+//            repository.customCommitTransaction();
+            repository.commitTransaction();
             return t;
         } catch (Exception e) {
             repository.customRollbackTransaction();
             throw e;
         }
-
     }
+
     @Override
     public List<T> saveAll(Collection<T> tCollection) {
         try {
-            repository.beginTransaction();
+//            repository.beginTransaction();
             List<T> entities = repository.saveALl(tCollection);
             repository.commitTransaction();
             return entities;

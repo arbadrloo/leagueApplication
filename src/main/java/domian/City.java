@@ -26,15 +26,11 @@ public class City extends BaseEntity <Integer> {
     @Column(name = NAME)
     String name;
 
-    @Column(name = TEAMS)
     @OneToMany(mappedBy = "city")
-    List<Team> teams;
+    List <Team> teams;
 
     @Column(name = STADIUMS)
-    @OneToMany(mappedBy = "city")
+    @OneToMany(mappedBy = "city", cascade = CascadeType.ALL)
     List<Stadium> stadiums;
-
-
-
 
 }

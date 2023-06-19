@@ -21,18 +21,11 @@ public class MatchLineup extends BaseEntity<Long> {
 
     public static final String MATCH = "MATCH";
 
-    @Column(name = MATCH)
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "match_id")
-    private Match match;
+    Match match;
 
-    @ManyToMany(mappedBy = "")
-    @JoinTable(
-            name = "match_lineup_players",
-            joinColumns = @JoinColumn(name = "match_lineup_id"),
-            inverseJoinColumns = @JoinColumn(name = "player_id")
-    )
-    Set <TeamEmployee> team1Players;
-
+    @OneToOne
+    Team team;
 
 }

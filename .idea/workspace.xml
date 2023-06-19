@@ -4,13 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0b6d02e-f559-493f-b7b1-781495368eb0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="e0b6d02e-f559-493f-b7b1-781495368eb0" name="Changes" comment="add League to the application.&#10;&#10;It was forgotten!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LeagueApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LeagueApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/repository/impl/BaseRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/repository/impl/BaseRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/service/impl/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/service/impl/BaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domian/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domian/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domian/Goal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domian/Goal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domian/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domian/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domian/MatchLineup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domian/MatchLineup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domian/Stadium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domian/Stadium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domian/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domian/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domian/TeamEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domian/TeamEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/impl/CityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/impl/CityRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/impl/TeamRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/impl/TeamRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Impl/CityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Impl/CityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Impl/GoalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Impl/GoalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Impl/MatchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Impl/MatchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Impl/TeamServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Impl/TeamServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/MatchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/MatchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,15 +51,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Application.LeagueApplication">
+    <configuration name="LeagueApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeagueApplication" />
+      <module name="footballLeague" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="slf4j-api-1.7.25.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LeagueApplication" />
+        <item itemvalue="JAR Application.slf4j-api-1.7.25.jar" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,11 +97,93 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686755625642</updated>
-      <workItem from="1686755626831" duration="4000" />
+      <workItem from="1686755626831" duration="36257000" />
+      <workItem from="1686806772481" duration="6639000" />
+      <workItem from="1686911989334" duration="35840000" />
+      <workItem from="1687161509667" duration="5688000" />
     </task>
+    <task id="LOCAL-00001" summary="create project structure.">
+      <created>1686756970919</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686756970919</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add entities.">
+      <created>1686773135975</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686773135975</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add repository layer.">
+      <created>1686775926441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686775926441</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add sevice layer.">
+      <created>1686794934058</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686794934058</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add ApplicationContext.">
+      <created>1686797013538</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686797013538</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add League to the application.&#10;&#10;It was forgotten!">
+      <created>1686798734715</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686798734715</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create project structure." />
+    <MESSAGE value="add entities." />
+    <MESSAGE value="add repository layer." />
+    <MESSAGE value="add sevice layer." />
+    <MESSAGE value="add ApplicationContext." />
+    <MESSAGE value="add League to the application.&#10;&#10;It was forgotten!" />
+    <option name="LAST_COMMIT_MESSAGE" value="add League to the application.&#10;&#10;It was forgotten!" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/base/repository/impl/BaseRepositoryImpl.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="util.CustomEntityTransaction" memberName="entityTransaction" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

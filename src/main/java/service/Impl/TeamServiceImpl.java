@@ -18,7 +18,7 @@ implements TeamService {
     public void calculateTotalScores(Team team) {
         int totalScore = 0;
 
-        for (Match match : team.getHomeMatches()) {
+        for (Match match : team.getMatches()) {
             for (Goal goal : match.getGoals()) {
                 if (goal.getPlayer().getTeam().equals(team)) {
                     totalScore++;
@@ -26,13 +26,6 @@ implements TeamService {
             }
         }
 
-        for (Match match : team.getAwayMatches()) {
-            for (Goal goal : match.getGoals()) {
-                if (goal.getPlayer().getTeam().equals(team)) {
-                    totalScore++;
-                }
-            }
-        }
 
         team.setTotalScore(totalScore);
     }

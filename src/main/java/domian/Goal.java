@@ -24,12 +24,12 @@ public class Goal extends BaseEntity<Long> {
 
     @ManyToOne
     @JoinColumn(name = "match_id")
-    @Column(name = MATCH)
+//    @Column(name = MATCH)
     Match match;
 
     @ManyToOne
     @JoinColumn(name = "player_id")
-    @Column(name = TEAM_EMPLOYEE)
+//    @Column(name = TEAM_EMPLOYEE)
     TeamEmployee player;
 
     @Column(name = SCORE_TIME)

@@ -5,5 +5,5 @@ import domian.Match;
 
 public interface MatchService extends BaseService<Match, Long> {
 
-    public void getMatchInformation(Match match);
+//    public void getMatchInformation(Match match);
 }

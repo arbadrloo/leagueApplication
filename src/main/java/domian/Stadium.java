@@ -25,7 +25,7 @@ public class Stadium extends BaseEntity<Integer> {
     @Column(name = NAME)
     String name;
 
-    @Column(name = CITY)
+//    @Column(name = CITY)
     @ManyToOne
     @JoinColumn(name = "city_id")
     City city;

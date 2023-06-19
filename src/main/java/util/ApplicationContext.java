@@ -25,6 +25,9 @@ public class ApplicationContext {
     private static GoalService goalService;
     private static CityRepository cityRepository;
     private static CityService cityService;
+    private static TeamEmployeeRepository teamEmployeeRepository;
+    private static TeamEmployeeService teamEmployeeService;
+
 
     public static TeamRepository getTeamRepository() {
         if (teamRepository == null) {
@@ -110,6 +113,20 @@ public class ApplicationContext {
             cityService = new CityServiceImpl(getCityRepository());
         }
         return cityService;
+    }
+
+    public static TeamEmployeeRepository getTeamEmployeeRepository() {
+        if (teamEmployeeRepository == null) {
+            teamEmployeeRepository = new TeamEmployeeRepositoryImpl(em);
+        }
+        return teamEmployeeRepository;
+    }
+
+    public static TeamEmployeeService getTeamEmployeeService() {
+        if (teamEmployeeService == null) {
+            teamEmployeeService = new TeamEmployeeServiceImpl(getTeamEmployeeRepository() );
+        }
+        return teamEmployeeService;
     }
 
 }

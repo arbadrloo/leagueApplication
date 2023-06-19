@@ -5,7 +5,6 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 @Table(name = TeamEmployee.TABLE_NAME)
@@ -39,12 +38,8 @@ public class TeamEmployee extends BaseEntity<Long> {
     Double salary;
 
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "TEAM_ID")
     Team team;
-
-    @ManyToMany(mappedBy = "employees")
-    private Set<MatchLineup> matchLineups;
-
 
 }
